@@ -10,11 +10,16 @@ class Spin extends React.Component {
     }
 }
 
-class App extends React.Component {
+class LoginPage extends React.Component {
     state = {
         account: undefined,
         password: undefined,
         loading: false,
+    }
+
+    constructor(props) {
+        super(props)
+        this.userService = new UserService()
     }
 
     handleLoginClick = async () => {
@@ -22,7 +27,7 @@ class App extends React.Component {
 
         try {
             this.setState({loading: true})
-            const userInfo = await (new UserService()).login({account, password})
+            await this.userService.login({account, password})
             window.location.href = 'index'
         } catch (e) {
             alert(e.message)
@@ -61,4 +66,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default LoginPage;
