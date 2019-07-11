@@ -1,0 +1,21 @@
+{
+  "name": "astrolabe-plan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/followWinter/astrolabe-plan",
+  "author": "lyxxxx <lyxxxx@yeah.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

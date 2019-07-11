@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Astrolabe Plan</title>
+    <script>
+        window.moduleConfig = [{
+            name: 'App',
+            path: './build/app.js',
+            type: 'service'
+        }, {
+            name: 'Message',
+            path: './build/message.js',
+            type: 'service'
+        }, {
+            name: 'Router',
+            path: './build/router.js',
+            type: 'service'
+        }, {
+            name: 'Notify',
+            path: './build/notify.js',
+            type: 'service'
+        }, {
+            name: 'App1',
+            path: './build/app1.js',
+            type: 'page',
+            router: 'app1'
+        }, {
+            name: 'App2',
+            path: './build/app2.js',
+            type: 'page',
+            router: 'app2'
+        }, {
+            name: 'Http',
+            path: './build/http.js',
+            type: 'service'
+        }, {
+            name: 'Config',
+            path: './build/config.js',
+            type: 'service',
+        }, {
+            name: 'Storage',
+            path: './build/storage.js',
+            type: 'reborn',
+        }]
+    </script>
+</head>
+<body>
+<div id="app">
+
+</div>
+</body>
+<script src="./build/index.js"></script>
+</html>
