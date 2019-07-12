@@ -304,6 +304,17 @@ window.Http = Http
     - `instance`：模块实例
     - `constr`：模块构造器
     - `loaded`：模块是否加载
+    - `type`：模块类型
+    - `lazy`：是否懒加载
+    - `single`：是否单例
+    
+模块类型UML
+
+![模块类型UML](https://assets.processon.com/chart_image/5d28900ae4b0b8079731d55c.png)
+
+模块生命周期
+
+![模块生命周期](https://assets.processon.com/chart_image/5d289330e4b0878e40b01465.png)
 
 `Ioc`维护一个依赖池，将系统中的所有依赖挂载到依赖池中，需要的时候可以从中提取和实例化。
  
@@ -944,6 +955,13 @@ window.AstrolabePlan.register('Storage', Storage)
     1. 工具模块// TODO：已经注入到其他模块了，很麻烦，可能需要使用代理类，不能直接注入，否则无法替换啊
     2. 服务模块// TODO：需要做数据转移
     3. 页面模块// TODO：如果是激活的，只能提示用户刷新，如果是未激活的，和工具模块一样的处理
+
+
+### 问题
+1. 还有很多模块还没实现
+2. 第三方库的共享可能也需要封装，当然也可以直接 umd 方式注入 window
+3. 文档还没完善
+...
 
 ### 总结
 微服务让整个前端项目真正的活起来了，而不是旋转木马，或者堆积木。
